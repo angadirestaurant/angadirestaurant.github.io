@@ -48,6 +48,7 @@
         document.onmouseup = mousehandler;
         </script>
 
+
 </head>
 
 
@@ -123,7 +124,7 @@
                                     <li ><a href="index.html">Home</a>
                                       
                                     </li> 
-                                    <li><a href="#">About Us</a>
+                                    <li><a href="about.html">About Us</a>
                                         
                                     </li>
                                     <li class="dropdown"><a href="#">Menu</a>
@@ -176,7 +177,7 @@
                                         </ul>
                                     </li>
                                    
-                                    <li><a href="contact.html">Contact</a></li>     
+                                    <li><a href="contact.html">Contact</a></li>      
                                 </ul>
                             </div>
                         </nav>
@@ -247,12 +248,9 @@
             </div>
             <div class="sidebar-from">
                 <h4>Keep in touch</h4>
-                <form method="" action="" id="submit-form"> 
+                <form method="post" action=""  id="submit-form"> 
                     <div class="col-lg-12 col-md-12 col-sm-12 form-group p-0">
                         <input type="text" name="username" placeholder="Your Name" required="">
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group p-0">
-                        <input type="phone" name="phone" placeholder="Your Phone Number" required="">
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 form-group p-0">
                         <input type="email" name="email" placeholder="Your email" required="">
@@ -266,28 +264,28 @@
                         </div>
                     </div>
                 </form>
+
+                <script>
+                    $("#submit-form").submit((e)=>{
+                    e.preventDefault()
+                    $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbzCh11ESAOX-uirr5UWuf_d8geyn7lESn20iZ7pvC11BqyZHb8OKdSLvvZCq-QA4vnDQA/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                    alert("One of our team will be in contact with you shortly. Thank you!")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                    alert("Something Error")
+                    
+                    }
+                    })
+                    })
+                    </script>
+
             </div>
-
-            <script>
-                $("#submit-form").submit((e)=>{
-                e.preventDefault()
-                $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzCh11ESAOX-uirr5UWuf_d8geyn7lESn20iZ7pvC11BqyZHb8OKdSLvvZCq-QA4vnDQA/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                alert("One of our team will be in contact with you shortly. Thank you!")
-                window.location.reload()
-                //window.location.href="https://google.com"
-                },
-                error:function (err){
-                alert("Something Error")
-                
-                }
-                })
-                })
-                </script>
-
             <div class="sidebar-social-network">
                 <div class="title__social">
                     <h6>Social Network:</h6>
@@ -304,27 +302,233 @@
         </section>
         <!-- hidden-sidebar end -->
 
-        <!-- comingsoon-section -->
-        <section class="comingsoon-section"> 
-            <div class="bg-layer" style="background-image: url(assets/images/resource/comingsoon.png);">
-
-            </div>
-            <div class="medium-container">
-                <div class="comingsoon_content_box centred">
+        <!-- page-title --> 
+        <section class="page-title centred" >
+           <div class="bg-layer parallax-bg" data-parallax='{"y": 150}' style="background-image: url(assets/images/background/about-us.jpg);">
+           </div>
+           <div class="auto-container">
+                <div class="content-box">
                     <div class="title">
-                        <h2>ANGADI BAKES AND RESTAURANT</h2>
-                    </div>
-                    <div class="timer">
-                        <div class="cs-countdown" data-countdown="08/08/2023 05:06:59"></div>
-                    </div>
-                    <div class="btn-box">
-                        <a href="https://api.whatsapp.com/send?phone=971553290033" target="_blank" class="theme-btn-two">View All Menu</a>
+                        <h1>About Us</h1>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- comingsoon-section end -->
+        <!-- page-title end --> 
 
+        <!-- about-us --> 
+        <section class="about__us see__pad p_relative">
+            <div class="anim-icon" >
+                <div class="icon icons-1 " data-parallax='{"x": 50}' style="background-image: url(assets/images/shape/shape-01.png);"></div>
+                <div class="icon icons-2 " style="background-image: url(assets/images/shape/shape-02.png);"></div>
+            </div>
+             <div class="about__us__content">
+                <div class="medium-container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            <div class="title__section">
+                                <div class="sub____title">
+                                    <span>About Us</span>
+                                </div>
+                                <div class="main____title">
+                                    <h1>Heaven and Earth are <br>
+                                        between <span> each other .</span></h1>
+                                </div>
+                            </div>
+                            <div class="normal__text">
+                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet <br> magna suscipit,  fermentum mattis erat rutrum. Sed suscipit libero <br> lectus, at ullamcorper erat feugiat eu. Nam posuere ultrices nibh ut <br> sagittis. Etiam arcu turpis, elementum ac nulla vel, tristique cursus <br> libero. Fusce feugiat, justo at mattis tincidunt, velit ante congue ante, <br> et lacinia metus ipsum a risus. </p>
+                                <p> Vivamus hendrerit porta libero nec imperdiet. Praesent interdum nisl <br> nec facilisis dapibus.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="about.html" class="theme-btn-two">View More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 p_relative">
+                            <div class="about__right__img ">
+                                <div class="about__right__img__one p_absolute">
+                                    <figure>
+                                        <img class="rotate-me" src="assets/images/resource/about-02.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="about__right__img__two wow slideInRight animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: slideInRight;">
+                                    <figure>
+                                        <img src="assets/images/resource/about-01.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </section>
+         <!-- about-us end-->
+
+        <!-- video-about-->
+         <section class="video__section about p_relative">
+            <div class="video__section__bg__img" style="background-image: url(assets/images/resource/video-about.png);">
+                <div class="video___block">
+                    <div class="video__btn">
+                        <a href="https://www.youtube.com/watch?v=qN3OueBm9F4&amp;feature=emb_title" class="lightbox-image video-btn p_relative d_iblock w_80 h_80 lh_85 text-center b_radius_50" data-caption=""><span class="icon-video"></span></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- video-about end -->
+         <!-- team-text-section --> 
+        <section class="team__text__slider about see__pad">
+            <div class="medium-container">
+                <div class="team-text-carousel owl-carousel owl-theme owl-dots-none nav-style-two ">
+                    <div class="team__text__block__one text-center">
+                        <div class="team__text__icon">
+                            <span class="icon-quote"></span>
+                        </div>
+                        <div class="normaol__text">
+                            <p>Curabitur et euismod nulla. In semper eros vel ipsum viverra interdum. Etiam sit amet massa <br>
+                                consectetur, bibendum lacus at, fringilla urna. Nunc eros magna, venenatis sit amet iaculis vel, <br>
+                                 maximus ut nulla. Etiam varius pharetra felis quis semper. Nam hendrerit porta odio, vitae pulvinar <br>
+                                  quam auctor eget. Duis pretium faucibus lobortis. </p>
+                        </div>
+                        <div class="team___info">
+                            <h5>Wade Warren</h5>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+                    <div class="team__text__block__one text-center">
+                        <div class="team__text__icon">
+                            <span class="icon-quote"></span>
+                        </div>
+                        <div class="normaol__text">
+                            <p>Curabitur et euismod nulla. In semper eros vel ipsum viverra interdum. Etiam sit amet massa <br>
+                                consectetur, bibendum lacus at, fringilla urna. Nunc eros magna, venenatis sit amet iaculis vel, <br>
+                                 maximus ut nulla. Etiam varius pharetra felis quis semper. Nam hendrerit porta odio, vitae pulvinar <br>
+                                  quam auctor eget. Duis pretium faucibus lobortis. </p>
+                        </div>
+                        <div class="team___info">
+                            <h5>Kamlia Hafi</h5>
+                            <span>Junior Chef</span>
+                        </div>
+                    </div>
+                    <div class="team__text__block__one text-center">
+                        <div class="team__text__icon">
+                            <span class="icon-quote"></span>
+                        </div>
+                        <div class="normaol__text">
+                            <p>Curabitur et euismod nulla. In semper eros vel ipsum viverra interdum. Etiam sit amet massa <br>
+                                consectetur, bibendum lacus at, fringilla urna. Nunc eros magna, venenatis sit amet iaculis vel, <br>
+                                 maximus ut nulla. Etiam varius pharetra felis quis semper. Nam hendrerit porta odio, vitae pulvinar <br>
+                                  quam auctor eget. Duis pretium faucibus lobortis. </p>
+                        </div>
+                        <div class="team___info">
+                            <h5>Dev Jon</h5>
+                            <span>Sinior Chef</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team-text-section-end --> 
+        <!-- team-section --> 
+        <section class="team-section p_relative see__pad">
+            <div class="medium-container">
+                <div class="title__section two">
+                    <div class="sub____title">
+                        <span>Team</span>
+                    </div>
+                    <div class="main____title">
+                        <h1>Our  <span> Expert chef</span></h1>
+                    </div>
+                </div>
+                <div class="normal__text two">
+                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet <br> magna suscipit,</p>
+                </div>
+                <div class="team__content">
+                    <div class="about-team-carousel owl-carousel owl-theme owl-dots-none nav-style-one ">
+                        <div class="team-block-one ">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="assets/images/team/team_1.png" alt="">
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="team__block__bottom">
+                                        <h5>Aren Goodman</h5>
+                                        <span>Junior Chef</span>
+                                        <div class="social__media">
+                                            <ul>
+                                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                                <li><a href="#"><span class="icon-twiter"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-block-one">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="assets/images/team/team_2.png" alt="">
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="team__block__bottom">
+                                        <h5>Johan Goodman</h5>
+                                        <span>Junior Chef</span>
+                                        <div class="social__media">
+                                            <ul>
+                                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                                <li><a href="#"><span class="icon-twiter"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-block-one">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="assets/images/team/team_3.png" alt="">
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="team__block__bottom">
+                                        <h5>Alex Jon</h5>
+                                        <span>Sinior Chef</span>
+                                        <div class="social__media">
+                                            <ul>
+                                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                                <li><a href="#"><span class="icon-twiter"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-block-one">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="assets/images/team/team_4.png" alt="">
+                                </figure>
+                                <div class="lower-content">
+                                    <div class="team__block__bottom">
+                                        <h5>Dontix Venu</h5>
+                                        <span>Junior Chef</span>
+                                        <div class="social__media">
+                                            <ul>
+                                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                                <li><a href="#"><span class="icon-twiter"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- team-section --> 
         <!-- main-footer -->
         <footer class="main-footer">
             <div class="auto-container">
@@ -367,14 +571,14 @@
                         </div>
                    </div>
                    <div class="footer__menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html">About</a></li>
-                            <li><a href="index.html">Menu</a></li>
-                            <li><a href="index.html">Blog</a></li>
-                            <li><a href="index.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                    </div>
                 </div>
             </div>
@@ -405,7 +609,6 @@
     <script src="assets/js/nav-tool.js"></script>
     <script src="assets/js/parallax-scroll.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/countdown.js"></script>
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
