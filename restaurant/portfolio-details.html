@@ -176,7 +176,7 @@
                                         </ul>
                                     </li>
                                    
-                                    <li><a href="contact.html">Contact</a></li>     
+                                    <li><a href="contact.html">Contact</a></li>      
                                 </ul>
                             </div>
                         </nav>
@@ -239,7 +239,7 @@
         <section class="hidden-sidebar side-navigation">
             <span class="close-button side-navigation-close-btn icofont-close"></span><!-- /.close-button -->
             <div class="sidebar-content">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo/AngadiRestaurant.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
             </div>
             <div class="sidebar-text">
                 <h4>About Us</h4>
@@ -247,7 +247,7 @@
             </div>
             <div class="sidebar-from">
                 <h4>Keep in touch</h4>
-                <form method="" action="" id="submit-form"> 
+                <form method="post" action=""  id="submit-form">  
                     <div class="col-lg-12 col-md-12 col-sm-12 form-group p-0">
                         <input type="text" name="username" placeholder="Your Name" required="">
                     </div>
@@ -264,6 +264,7 @@
                     </div>
                 </form>
 
+                
                 <script>
                     $("#submit-form").submit((e)=>{
                     e.preventDefault()
@@ -300,183 +301,242 @@
         </section>
         <!-- hidden-sidebar end -->
 
-        <!-- page-title --> 
-        <section class="page-title centred" >
-           <div class="bg-layer parallax-bg" data-parallax='{"y": 150}' style="background-image: url(assets/images/background/portfolio.jpg);">
-           </div>
-           <div class="auto-container">
-                <div class="content-box">
-                    <div class="title">
-                        <h1>Portfolio</h1>
+        <!-- banner-section -->
+        <section class="banner-style-six p_relative">
+            <div class="portfolio-carousel owl-theme owl-carousel owl-dots-none nav-style-one">
+                <div class="slide-item">
+                    <div class="image-layer">
+                        <img src="assets/images/banner/banner-04.png" alt="">
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="image-layer">
+                        <img src="assets/images/banner/banner-05.png" alt="">
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="image-layer">
+                        <img src="assets/images/banner/banner-06.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- page-title end --> 
+        <!-- banner-section end -->
 
-         <!-- food-section -->
-         <section class="food__section see__pad gallery__page">
+        <!-- portfolio-section end -->
+        <section class="portfolio__section see__pad">
+            <div class="portfolio__details__contect">
+                <div class="medium-container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="portfolio__left">
+                                <h4>Beef Skewers</h4>
+                                <div class="portfolio__details__text">
+                                    <p> Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit, fermentum mattis erat rutrum. <br>  Sed suscipit libero lectus, at ullamcorper erat feugiat eu. Nam posuere ultrices nibh ut sagittis. Etiam arcu turpis, <br> elementum ac nulla vel, tristique cursus libero. Fusce feugiat, justo at mattis tincidunt, velit ante congue ante, et <br> lacinia metus ipsum a risus. Vivamus hendrerit porta libero nec imperdiet. Praesent interdum nisl nec facilisis <br> dapibus. Suspendisse sed dignissim lorem. In in interdum ex, vitae ultricies risus. Nullam semper venenatis sapien <br> vitae gravida. Nam in odio arcu.
+                                    </p>
+                                    <p>Curabitur et euismod nulla. In semper eros vel ipsum viverra interdum. Etiam sit amet massa consectetur, <br> bibendum lacus at, fringilla urna. Nunc eros magna, venenatis sit amet iaculis vel, maximus ut nulla. Etiam varius <br> pharetra felis quis semper. Nam hendrerit porta odio, vitae pulvinar quam auctor eget. Duis pretium faucibus <br> lobortis. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="portfolio__right">
+                                <div class="catagory">
+                                    <div class="catagory__list">
+                                        <h6>Category:</h6>
+                                        <span class="right__site">Recipes</span>
+                                    </div>
+                                    <div class="catagory__list">
+                                        <h6>Date:</h6>
+                                        <span class="right__site">20 Octber, 2024</span>
+                                    </div>
+                                    <div class="catagory__list">
+                                        <h6>Tags:</h6>
+                                        <span class="right__site">Recipes, Tasty</span>
+                                    </div>
+                                    <div class="catagory__list">
+                                        <h6>Share:</h6>
+                                        <div class="portfolio__social__midea right__site">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/angadirestaurant/" target="_blank"><span class="icon-facebook social_media"></span></a> </li>
+                                                <li><a href="#"><span class="icon-linkedin social_media"></span></a></li>
+                                                <li><a href="https://x.com/angadihotel" target="_blank"><span class="icon-twiter social_media"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio-section end -->
+       <!-- product-section  -->
+       <section class="product__section">
             <div class="medium-container">
-                <div class="wow slideInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInUp;">
+                <div class="product__section__two see__pad">
+                    <div class="more__recipe">
+                        <h4>More Recipes :</h4>
+                    </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-03.png" alt="">
+                            <div class="product__inner__box">
+                                <div class="peoduct__img">
+                                    <figure>
+                                        <a href="shop-details.html"><img src="assets/images/products/product-04.png" alt=""></a>
                                     </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-03.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
-                                    </div>
                                 </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Prawn Bisque</a> </h4>
-                                    <span class="sub____title">Food</span>
+                                <div class="product__content text-center">
+                                    <h5><a href="shop-details.html">Fusilli</a></h5>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <span> <span class="discount__price"> </span> </span>
+                                    </div>
+                                    <div class="product__icon">
+                                        <ul>
+                                            <li><a href="shop-details.html"><span class="icon-shopping-bag"></span></a></li>
+                                            <li><a href="#"><span class="icon-wishlist"></span></a></li>
+                                            <li><a href="assets/images/products/product-04.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-quick-view"></span></a></li>
+                                            <li> <a href="#"><span class="icon-compare"></span></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-01.png" alt="">
+                            <div class="product__inner__box">
+                                <div class="peoduct__img">
+                                    <figure>
+                                        <a href="shop-details.html"><img src="assets/images/products/product-07.png" alt=""></a>
                                     </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-01.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
-                                    </div>
                                 </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Eeg Week</a> </h4>
-                                    <span class="sub____title">Food</span>
+                                <div class="product__content text-center">
+                                    <h5><a href="shop-details.html">Spaghetti</a></h5>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <span> <span class="discount__price"> </span></span>
+                                    </div>
+                                    <div class="product__icon">
+                                        <ul>
+                                            <li><a href="shop-details.html"><span class="icon-shopping-bag"></span></a></li>
+                                            <li><a href="#"><span class="icon-wishlist"></span></a></li>
+                                            <li><a href="assets/images/products/product-07.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-quick-view"></span></a></li>
+                                            <li> <a href="#"><span class="icon-compare"></span></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-02.png" alt="">
+                            <div class="product__inner__box">
+                                <div class="peoduct__img">
+                                    <figure>
+                                        <a href="shop-details.html"><img src="assets/images/products/product-08.png" alt=""></a>
                                     </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-02.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
+                                </div>
+                                <div class="product__content text-center">
+                                    <h5><a href="shop-details.html">Fettuccine</a></h5>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                            <li><span class="icon-star"></span></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Tomato Soup</a> </h4>
-                                    <span class="sub____title">Food</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-04.png" alt="">
-                                    </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-04.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
+                                    <div class="price">
+                                        <span> <span class="discount__price"></span></span>
                                     </div>
-                                </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Duck Confit</a> </h4>
-                                    <span class="sub____title">Food</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-05.png" alt="">
-                                    </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-05.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
+                                    <div class="product__icon">
+                                        <ul>
+                                            <li><a href="shop-details.html"><span class="icon-shopping-bag"></span></a></li>
+                                            <li><a href="#"><span class="icon-wishlist"></span></a></li>
+                                            <li><a href="assets/images/products/product-08.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-quick-view"></span></a></li>
+                                            <li> <a href="#"><span class="icon-compare"></span></a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Sponge Cake</a> </h4>
-                                    <span class="sub____title">Food</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="food-block-one two">
-                                <div class="inner-box">
-                                    <figure class="image-box">
-                                        <img src="assets/images/resource/food-slider-06.png" alt="">
-                                    </figure>
-                                    <div class="lower-content">
-                                        <div class="view-btn"><a href="assets/images/resource/food-slider-06.png" class="lightbox-image" data-fancybox="gallery"><span class="icon-add"></span></a></div>
-                                    </div>
-                                </div>
-                                <div class="food__block__bottom">
-                                    <h4><a href="portfolio-details.html">Fish Steak</a> </h4>
-                                    <span class="sub____title">Food</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- food-section end -->
-       
-        <!-- main-footer -->
-        <footer class="main-footer">
+    </section>
+    <!-- product-section end -->
+     <!-- main-footer -->
+     <footer class="main-footer">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 pr-0">
+                    <div class="footer__title">
+                        <div class="footer__title__icon">
+                            <img src="assets/images/icons/map.png" alt="">
+                            <span class="sub____title">Address</span>
+                        </div>
+                        <div class="footer___title__text">
+                            <p>
+                                Street:  M13, Musaffah, Abu Dhabi <br> United Arab Emirates 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 pl-0">
+                    <div class="footer__title">
+                        <div class="footer__title__icon">
+                            <img src="assets/images/icons/phone.png" alt="">
+                            <span class="sub____title">Contact Us</span>
+                        </div>
+                        <div class="footer___title__text">
+                            <p>
+                                <a href="tell:+971553290033">(971) 55 329 0033</a> 
+                                <a href="tell:+971553290033">(971) 55 329 0033</a> <br>
+                                 Open: 06:00 am – 12:00 am 
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <div class="auto-container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 pr-0">
-                        <div class="footer__title">
-                            <div class="footer__title__icon">
-                                <img src="assets/images/icons/map.png" alt="">
-                                <span class="sub____title">Address</span>
-                            </div>
-                            <div class="footer___title__text">
-                                <p>
-                                    Street:  M13, Musaffah, Abu Dhabi <br> United Arab Emirates 
-                                </p>
-                            </div>
-                        </div>
+               <div class="footer__logo">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="index.html"><img src="assets/images/logo/logoMobile.png" alt=""></a></figure>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 pl-0">
-                        <div class="footer__title">
-                            <div class="footer__title__icon">
-                                <img src="assets/images/icons/phone.png" alt="">
-                                <span class="sub____title">Contact Us</span>
-                            </div>
-                            <div class="footer___title__text">
-                                <p>
-                                    <a href="tell:+971553290033">(971) 55 329 0033</a> 
-                                    <a href="tell:+971553290033">(971) 55 329 0033</a> <br>
-                                     Open: 06:00 am – 12:00 am 
-                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               </div>
+               <div class="footer__menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+               </div>
             </div>
-            <div class="footer-bottom">
-                <div class="auto-container">
-                   <div class="footer__logo">
-                        <div class="logo-box">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo/logoMobile.png" alt=""></a></figure>
-                        </div>
-                   </div>
-                   <div class="footer__menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                   </div>
-                </div>
-            </div>
-        </footer>
-        <!-- main-footer end -->
-
+        </div>
+    </footer>
+    <!-- main-footer end -->
+        
 
         <!--Scroll to top-->
         <button class="scroll-top scroll-to-target" data-target="html">
